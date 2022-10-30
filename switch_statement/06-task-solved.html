@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Перепишите следующий код таким образом, чтобы вместо условия использовался тернарный
+оператор. При этом поведение сценария не должно измениться.
+let x = 10;
+let y = 0;
+if (x > 5)
+ y = 20;
+else
+ y = 30;
+console.log(y);
+    </pre>
+    <script>
+        let x = 1;
+        let y = 0;
+
+        let numberValue = x > 5 ? y = 20 : y = 30;
+        // if (x > 5)
+        //     y = 20;
+        // else
+        //     y = 30;
+        console.log(numberValue);
+    </script>
+</body>
+
+</html>
