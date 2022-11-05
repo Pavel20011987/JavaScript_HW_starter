@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Задание
+
+       Создайте массив и внесите в него 10 случайных значений.
+       Для создания случайного значения используйте следующий код:
+       let randomValue = Math.floor(Math.random() * 101); // случайное значение от 0 до 100 будет
+       записано в переменную randomValue
+       Выведите все значения, внесенные в массив, на экран с помощью цикла.
+    </pre>
+    <script>
+        let randomNumbers = [];
+
+        let randomValue = Math.floor(Math.random() * 101); // случайное значение от 0 до 100 будет записано в переменную randomValue
+
+        let index = 10;
+
+        for (let i = 0; i < index; i++) {
+            randomNumbers.push(randomValue++);
+
+        }
+
+        for (let number of randomNumbers) {
+            console.log(number);
+        }
+    </script>
+</body>
+
+</html>
