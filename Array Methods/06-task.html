@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Задание
+        С помощью prompt попросите пользователя ввести предложение. Выведите на экран
+        количество слов в этом предложении.
+    </pre>
+    <script>
+        var str = prompt("Введите предложение: ");
+        var arr = str.split(/\s+/);
+        var index;
+
+        if (index == arr.indexOf('-')) {
+            arr.splice(index, 1);
+        } else if (index == arr.indexOf(' :')) {
+            arr.splice(index, 1);
+        } else if (index == arr.indexOf(" ,")) {
+            arr.splice(index, 1);
+        } else if (index == arr.indexOf(' =')) {
+            arr.splice(index, 1);
+        }
+
+        // index = arr.indexOf('-');
+        //index1 = arr.indexOf(':');
+        //index2 = arr.indexOf(',');
+
+        arr.splice(index, 1);
+        //arr.splice(index1, 1);
+        //arr.splice(index2, 1);
+
+
+        //var arr = str.split('-');
+        console.log(arr.length); //4
+    </script>
+</body>
+
+</html>
