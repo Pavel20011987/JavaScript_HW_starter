@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <pre>
+        Создайте одну глобальную переменную с произвольным значением и две функции.
+Продемонстрируйте, что глобальная переменная может использоваться в этих двух функциях
+    </pre>
+    <script>
+        // глобальные переменные car и year
+        let car = 'Audi';
+        let year = 2007;
+
+        function myFunc() {
+            // локальная переменная car
+            let car = 'Ford';
+            console.log(car); // "Ford"
+            console.log(year); // 2007
+        }
+        myFunc(); // "Ford"
+
+        // глобальная переменная numberUsers
+        let numberUsers = 0;
+        // объявление функции addUsers
+        const addUsers = (num) => {
+            numberUsers += num;
+            return numberUsers;
+        }
+
+        console.log(addUsers(5)); // 5
+        console.log(addUsers(2)); // 7
+        console.log(numberUsers); // 7
+    </script>
+</body>
+
+</html>
